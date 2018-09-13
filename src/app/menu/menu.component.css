@@ -1,0 +1,18 @@
+.menubox {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1em;
+}
+
+.menubuttonbox {
+    background-color:var(--blue);
+    box-shadow: var(--shadow);
+    text-align: center;
+    border-radius: 0.2em;
+    font-size: 250%;
+    color: var(--primary);
+}
+
+.menubuttonbox:hover {
+    background-color: var(--darkblue);
+}

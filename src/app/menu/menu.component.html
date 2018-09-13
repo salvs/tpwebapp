@@ -1,0 +1,14 @@
+
+<div class="menubox">
+    <div (click)="onSelect(menus[0])" class="menubuttonbox">{{menus[0].name}}</div>
+    <div (click)="onSelect(menus[1])" class="menubuttonbox">{{menus[1].name}}</div>
+    
+</div>
+<p></p>
+
+<div *ngIf="selectedMenu.name == 'Users'">
+  <app-persons></app-persons>
+</div>
+<div *ngIf="selectedMenu.name == 'Cleanups'">
+    <app-cleanup></app-cleanup>
+</div>

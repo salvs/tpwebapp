@@ -1,0 +1,20 @@
+<div *ngIf="persons">
+    
+        <div *ngFor="let person of persons" (click)="onSelectPerson(person.id)">
+           
+                <div class="row">
+                   
+                    1<img src="/src/assets/carl_pr_2.JPG" width="20px" height="20px">
+                    
+                    2{{person.id}}
+                    {{person.username}} 
+                    <div *ngIf="selectedPerson==person.id">
+                           3 <app-cleanup [personId]="person.id"></app-cleanup>
+                        </div>
+           
+                
+            
+                </div>
+        </div>
+    
+</div>
